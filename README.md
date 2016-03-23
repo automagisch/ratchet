@@ -1,5 +1,5 @@
 # App Starter
-A simple and clean boilerplate for quickly kickstarting new projects. Very minimal integration with much power. — Edit
+A simple and clean boilerplate for quickly kickstarting new projects. Very minimal integration with much power.
 
 ## Basic guides
 
@@ -15,9 +15,9 @@ $ cd app-starter
 ```
 
 ### Setup
-Install all npm and bower dependencies:
+Install all npm and bower dependencies (bower will be ran automagically after npm install finished):
 ```
-$ npm run-script setup
+$ npm install
 ```
 
 ### Start
@@ -27,8 +27,7 @@ $ npm start
 ```
 
 ### Build
-Make a single distribution build without watching or serving:
+Build a single distribution build without watching or serving:
 ```
-$ npm run-script dist
+$ npm run build
 ```
-

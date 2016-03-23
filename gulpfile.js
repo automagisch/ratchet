@@ -15,6 +15,7 @@ var watch 		= require('gulp-watch');
 var ftp 		= require('gulp-ftp');
 var gutil 		= require('gulp-util');
 var config 		= require('ini').parse(fs.readFileSync('./config.ini', 'utf-8'));
+
 /**
  * SASS task
  * @description: handles off sass to css compilation
@@ -162,10 +163,10 @@ gulp.task('start', function() {
 });
 
 /**
- * DIST task
+ * BUILD task
  * @description: builds the dist folder without starting the server and watch tasks
  */
-gulp.task('dist', ['bower','images','scripts','styles','html']);
+gulp.task('build', ['bower','images','scripts','styles','html']);
 
 /**
  * DEPLOY task

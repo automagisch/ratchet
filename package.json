@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp",
-    "setup": "npm install && bower install",
-    "dist": "gulp dist"
+    "postinstall": "bower install",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
