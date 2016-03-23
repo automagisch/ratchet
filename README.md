@@ -14,7 +14,7 @@ After you're done, navigate to the locally cloned repository:
 $ cd app-starter
 ```
 
-### Setup
+### Install
 Install all npm and bower dependencies (bower will be ran automagically after npm install finished):
 ```
 $ npm install
