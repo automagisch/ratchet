@@ -1,0 +1,44 @@
+{
+  "name": "app-starter",
+  "version": "1.0.0",
+  "description": "A simple and clean boilerplate for quickly kickstarting new projects. Very minimal integration with much power.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "setup": "npm install && bower install",
+    "dist": "gulp dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koenhoutman1991/app-starter.git"
+  },
+  "keywords": [
+    "website",
+    "art",
+    "helping",
+    "a",
+    "friend",
+    "out"
+  ],
+  "author": "Koen Houtman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koenhoutman1991/app-starter/issues"
+  },
+  "homepage": "https://github.com/koenhoutman1991/app-starter#readme",
+  "devDependencies": {
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-bower-assets": "0.0.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-file-include": "^0.13.7",
+    "gulp-ftp": "^1.1.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "ini": "^1.3.4"
+  }
+}

@@ -1,0 +1,15 @@
+{
+	"main": {
+		"js/vendor.js@concat": [
+			"jquery/dist/jquery.js",
+			"bootstrap/dist/assets/javascripts/bootstrap.js"
+		],
+		"css/vendor.css@concat": [
+			
+		],
+		"fonts@copy": [
+			"bootstrap-sass/assets/fonts/bootstrap/*",
+			"font-awesome/fonts/*"
+		]
+	}
+}

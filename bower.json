@@ -1,0 +1,31 @@
+{
+  "name": "site-voor-vincents-moeder",
+  "description": "collab with my friend vincent to make his mom a cool website",
+  "main": "index.js",
+  "authors": [
+    "Koen Houtman and Vincent Schut"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "website",
+    "art",
+    "helping",
+    "a",
+    "friend",
+    "out"
+  ],
+  "homepage": "https://github.com/koenhoutman1991/site-voor-vincents-moeder",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "font-awesome": "^4.5.0"
+  }
+}

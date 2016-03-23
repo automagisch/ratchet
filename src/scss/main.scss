@@ -1,0 +1,5 @@
+// sets a bootstrap variable to our fonts folder so glyphicons get loaded as well
+$icon-font-path: "../fonts/";
+
+@import "bootstrap";
+@import "font-awesome";
