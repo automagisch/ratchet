@@ -14,19 +14,19 @@ After you're done, navigate to the locally cloned repository:
 $ cd app-starter
 ```
 
-### setup
+### Setup
 Install all npm and bower dependencies:
 ```
 $ npm run-script setup
 ```
 
-### start
+### Start
 Boot the server and start the gulp process simultaneously:
 ```
 $ npm start
 ```
 
-### build
+### Build
 Make a single distribution build without watching or serving:
 ```
 $ npm run-script dist
