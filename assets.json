@@ -2,10 +2,11 @@
 	"main": {
 		"js/vendor.js@concat": [
 			"jquery/dist/jquery.js",
+			"handlebars/handlebars.js",
 			"bootstrap/dist/assets/javascripts/bootstrap.js"
 		],
 		"css/vendor.css@concat": [
-			
+			"normalize-css/normalize.css"
 		],
 		"fonts@copy": [
 			"bootstrap-sass/assets/fonts/bootstrap/*",

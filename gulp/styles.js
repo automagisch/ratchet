@@ -12,7 +12,6 @@ module.exports = function() {
 	return sass('./src/scss/main.scss', {
 		sourcemap: true,
 		loadPath: [
-			'bower_components/bootstrap-sass/assets/stylesheets/',
 			'bower_components/font-awesome/scss'
 		]
 	})

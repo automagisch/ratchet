@@ -42,4 +42,3 @@ node_modules
 bower_components
 dist
 .sass-cache
-config.ini

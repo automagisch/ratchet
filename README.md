@@ -31,3 +31,7 @@ Build a single distribution build without watching or serving:
 ```
 $ npm run build
 ```
+
+### Serve HTML files
+serving HTML files can be done using the /:file_name route. What this does is search for an HTML file with the `file_name` parameter. If found, it will serve that file (without the .html in it).
+So imagine you have a file 'myawesomepage.html', you can simply serve it by browsing to `localhost:[port_number]/myawesomepage`.

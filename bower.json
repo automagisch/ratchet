@@ -1,6 +1,6 @@
 {
-  "name": "site-voor-vincents-moeder",
-  "description": "collab with my friend vincent to make his mom a cool website",
+  "name": "ratchet-frontend-boilerplate",
+  "description": "A simple and clean boilerplate for quickly kickstarting new projects. Very minimal integration with much power.",
   "main": "index.js",
   "authors": [
     "Koen Houtman and Vincent Schut"
@@ -25,7 +25,9 @@
     "tests"
   ],
   "devDependencies": {
-    "bootstrap-sass": "^3.3.6",
-    "font-awesome": "^4.5.0"
+    "font-awesome": "^4.5.0",
+    "normalize-css": "^5.0.0",
+    "handlebars": "^4.0.0",
+    "jquery": "^3.1.1"
   }
 }
