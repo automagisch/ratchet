@@ -6,12 +6,12 @@ A simple and clean boilerplate for quickly kickstarting new projects. Very minim
 ### Clone
 Clone this remote repository to your computer:
 ```
-$ git clone git@github.com:koenhoutman1991/app-starter.git
+$ git clone git@github.com:koenhoutman1991/ratchet.git
 ```
 
 After you're done, navigate to the locally cloned repository:
 ```
-$ cd app-starter
+$ cd ratchet
 ```
 
 ### Install
@@ -25,6 +25,8 @@ Boot the server and start the gulp process simultaneously:
 ```
 $ npm start
 ```
+
+note: by default, your app will be hosted on port 4200. Configurations for this can be made in config.ini.
 
 ### Build
 Build a single distribution build without watching or serving:
