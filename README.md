@@ -55,7 +55,7 @@ module.exports = function() {
 ```
 
 After that, your task is available under the filename of that task. Like you would expect ;)
-This feature is enabled by [gulp-task-loader](https://www.npmjs.com/package/gulp-task-loader
+This feature is enabled by [gulp-task-loader](https://www.npmjs.com/package/gulp-task-loader)
 
 
 More info soon.
