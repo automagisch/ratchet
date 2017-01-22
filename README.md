@@ -20,19 +20,19 @@ Ratchet features a lot of cool nowadays hot stuff! Ratchet collects the followin
 $ git clone https://github.com/automagisch/ratchet.git && cd ratchet
 ```
 
-2. Install all NPM dependencies from package.json and install bower packages from bower.json
+2. Install all NPM dependencies from package.json and install bower packages from bower.json.
 ```bash
 $ npm install
 ```
 
-3. Start the server, make a build and start gulp tasks
+3. Start the server, make a build and start gulp tasks.
 ```bash
 $ npm start
 ```
 
-4. Start developing, your app is hosted at [http://localhost:4200](http://localhost:4200/)
+4. Start developing, your app is hosted at [http://localhost:4200](http://localhost:4200/).
 
-5. Only make a build
+$ To only make a build, you can run from the application root.
 ```
 npm build
 ```
@@ -55,7 +55,17 @@ module.exports = function() {
 ```
 
 After that, your task is available under the filename of that task. Like you would expect ;)
-This feature is enabled by [gulp-task-loader](https://www.npmjs.com/package/gulp-task-loader)
+This feature is enabled by [gulp-task-loader](https://www.npmjs.com/package/gulp-task-loader).
 
+### fake API calls
+In the data directory, you can put any JSON file. You can serve them up from the client (e.g using AJAX) by passing in this url (your file in the data directory is called 'somejson.json' - this will work for POST, GET, PUT and DELETE):
 
-More info soon.
+```
+http://localhost:4200/api/somejson
+```
+
+### serving static html files
+In Ratchet, you can serve static HTML files as if they were URL endpoints! In index.js, there is an express route that will serve up your html pages by there filename, the same way any back-end would do! Let's say you have a file called introduction.html in the ./dist folder, you can serve it up by going to: 
+```
+localhost:4200/introduction
+```
