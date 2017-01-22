@@ -1,39 +1,32 @@
 # Ratchet
-A simple and clean boilerplate for quickly kickstarting new projects. Very minimal integration with much power.
+Create fast up-to-date ratchet apps using the latest in accepted web technologies! Ratchet is a collection of new-skool development tools and libraries!
 
-## Basic guides
+## Ratchet comes with:
+Ratchet features a lot of cool nowadays hot stuff! Ratchet collects the following open source frameworks and packages:
 
-### Clone
-Clone this remote repository to your computer:
-```
-$ git clone git@github.com:koenhoutman1991/ratchet.git
-```
++ [Node.js](https://nodejs.org/)
++ [Gulp](http://gulpjs.com/)
++ [Bower](https://bower.io/)
++ [ExpressJS](http://expressjs.com/)
++ [Handlebars](http://handlebarsjs.com/)
++ [ES6 (transpiled using babelify)](https://github.com/babel/babelify)
++ [Sass](http://sass-lang.com/)
++ [FontAwesome](http://fontawesome.io/)
++ [Normalize.css](https://necolas.github.io/normalize.css/)
 
-After you're done, navigate to the locally cloned repository:
-```
-$ cd ratchet
-```
+### Installation
+1. Clone ratchet to your machine from this repository and cd into that folder:
+`$ git clone https://github.com/automagisch/ratchet.git && cd ratchet`
 
-### Install
-Install all npm and bower dependencies (bower will be ran automagically after npm install finished):
-```
-$ npm install
-```
+2. Install all NPM dependencies from package.json and install bower packages from bower.json
+`$ npm install`
 
-### Start
-Boot the server and start the gulp process simultaneously:
-```
-$ npm start
-```
+3. Start the server and start gulp tasks
+`$ npm start`
 
-note: by default, your app will be hosted on port 4200. Configurations for this can be made in config.ini.
+4. Start developing, your app is hosted at [http://localhost:4200](http://localhost:4200/)
 
-### Build
-Build a single distribution build without watching or serving:
-```
-$ npm run build
-```
+### building HTML, CSS and JavaScript
+Ratchet aims to be quick and simple without any necessary configuration. Basically everything you do will be in `./src/`. This goes for JS, scss, images, html, fonts and handlebars. These directories are clean, they don't follow any build-specific instructions for any kind of thing, they just output directly to `./dist`. You are in total control how your source folder works! And yes, you can use importing features from ES6 and Sass (the folder your main js/scss file lives in is treated as the root)!
 
-### Serve HTML files
-serving HTML files can be done using the /:file_name route. What this does is search for an HTML file with the `file_name` parameter. If found, it will serve that file (without the .html in it).
-So imagine you have a file 'myawesomepage.html', you can simply serve it by browsing to `localhost:[port_number]/myawesomepage`.
+More info soon.

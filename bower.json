@@ -1,20 +1,25 @@
 {
-  "name": "ratchet-frontend-boilerplate",
+  "name": "ratchet",
   "description": "A simple and clean boilerplate for quickly kickstarting new projects. Very minimal integration with much power.",
   "main": "index.js",
   "authors": [
-    "Koen Houtman and Vincent Schut"
+    "Koen Houtman"
   ],
   "license": "ISC",
   "keywords": [
-    "website",
-    "art",
-    "helping",
-    "a",
-    "friend",
-    "out"
+    "ratchet",
+    "boilerplate",
+    "web",
+    "development",
+    "sass",
+    "handlebars",
+    "es6",
+    "express",
+    "static",
+    "server",
+    "nodejs"
   ],
-  "homepage": "https://github.com/koenhoutman1991/site-voor-vincents-moeder",
+  "homepage": "https://github.com/automagisch/ratchet",
   "moduleType": [],
   "private": true,
   "ignore": [

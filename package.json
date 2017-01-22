@@ -1,5 +1,5 @@
 {
-  "name": "ratchet-frontend-boilerplate",
+  "name": "ratchet",
   "version": "1.0.0",
   "description": "A simple and clean boilerplate for quickly kickstarting new projects. Very minimal integration with much power.",
   "main": "index.js",
@@ -10,22 +10,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koenhoutman1991/app-starter.git"
+    "url": "https://github.com/automagisch/ratchet"
   },
   "keywords": [
-    "website",
-    "art",
-    "helping",
-    "a",
-    "friend",
-    "out"
+    "ratchet",
+    "boilerplate",
+    "web",
+    "development",
+    "sass",
+    "handlebars",
+    "es6",
+    "express",
+    "static",
+    "server",
+    "nodejs"
   ],
   "author": "Koen Houtman",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/koenhoutman1991/app-starter/issues"
+    "url": "https://github.com/automagisch/ratchet/issues"
   },
-  "homepage": "https://github.com/koenhoutman1991/app-starter#readme",
+  "homepage": "https://github.com/automagisch/ratchet#readme",
   "devDependencies": {
     "babel-preset-es2015": "^6.18.0",
     "babelify": "^7.3.0",
