@@ -97,7 +97,7 @@ to worry about it a lot.
 **Serving static JSON over ajax:**
 I've made an API mock route in express that passes static JSON to the client side. You can use these for simulating client-side AJAX calls! All you have to do is put a json file in the `data` directory. Then, you can request up that file (using GET, PUT, POST or DELETE methods) by passing in the filename (without JSON) after this url: 
 
-```localhost:4200/api/your-file-name```
+`localhost:4200/api/your-file-name`
 
 This will serve up the json file with that filename and it will be available as your JSON response body! Not a single line of back-end code needed ;).
 
