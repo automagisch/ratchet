@@ -152,6 +152,7 @@ This Gulp package taking care of the hbs precompilation in Ratchet:
 There are (and will be) more easy configurables in Ratchet. They all live in config.ini, and can be changed there.
 
 _Listening port_
+
 Under the app section in config.ini, you can change the port your app is hosted locally. Defaults to `4200`
 
 ```ini
@@ -160,6 +161,7 @@ port = 4200
 ```
 
 _enable/disable my awesome ascii art_
+
 If you don't like the ascii art as much as I do, you can turn it off under the 'ratchet' section by setting the `show_ascii_art`
 flag to `false`
 
@@ -168,15 +170,22 @@ flag to `false`
 show_ascii_art = false
 ```
 
+_enable/disable es6 or good 'ol javascript_
+If you prefer to work with Javascript as we know it, you can configure so in config.ini. Ratchet automatically picks up on this
+and 
+
+```ini
+[ratchet]
+use_es6 = false
+```
+
 ### Known bugs
-- If you add new files, you'll have to restart Ratchet (`ctrl-c + npm start`) in order to have them watched by the build process.
-- The distribution folder is not synced, so if you delete files in source, you'll have to delete them yourself in `./dist`.
+- The distribution folder is not synced, so if you delete files in src, you'll have to delete them yourself in `./dist`.
 
 ### Planned features
 - Add unit test functionality to ES6 javascript compilation [feature]
 - Add support for easily setting up express directives (and thus Ratchet will be more like a web-app boilerplate) [feature]
 - Create a good start for going with big javascript frameworks [feature]
-- More automagical features, such as auto-refresh gulp watch tasks after new files are added [bugfix]
 - Sync the dist folder with the source folder [bugfix]
 
 
