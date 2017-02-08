@@ -11,7 +11,9 @@ module.exports = function() {
 	return gulp.src('./src/images/**/*')
 
 	// push them through gulp-imagemin
-	.pipe(imagemin())
+	.pipe(imagemin({
+		verbose: true
+	}))
 
 	// output to dist folder
 	.pipe(gulp.dest('./dist/assets/images'));
