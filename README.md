@@ -181,6 +181,10 @@ use_es6 = false
 
 ### Known bugs
 - The distribution folder is not synced, so if you delete files in src, you'll have to delete them yourself in `./dist`.
+- If you see an error that templates.js can't be found, create a 'test.hbs' file in 'src/handlebars'. This will create the file.
+
+### Planned fixes
+- Build templates.js on installation to avoid 404 errors.
 
 ### Planned features
 - Add unit test functionality to ES6 javascript compilation [feature]
