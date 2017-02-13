@@ -21,7 +21,7 @@ module.exports = function(done) {
 	gulp.watch('src/scripts/**/*.babel', gulp.series(['babel']));
 
 	// watches the images folder for changes, if a change is detected, it runs task 'images'
-	gulp.watch(['src/images/**/*.{jpg|png|svg}','src/images/**/*'], gulp.series(['images']));
+	gulp.watch('src/images/**/*.{jpg|png|svg}', gulp.series(['images']));
 
 	// watches the handlebars folder for changes, if a change is detected, it runs task 'handlebars'
 	gulp.watch('src/handlebars/**/*.hbs', gulp.series(['handlebars']));
