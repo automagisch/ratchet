@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp",
-    "postinstall": "bower install",
+    "preinstall": "gulp install",
+    "postinstall": "bower install && gulp build",
     "build": "gulp build"
   },
   "repository": {
