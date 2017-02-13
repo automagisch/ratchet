@@ -190,6 +190,12 @@ use_es6 = false
 - Create a good start for going with big javascript frameworks [feature]
 - Sync the dist folder with the source folder [bugfix]
 
+### Changelog
 
+## 1.0.1
+- updated Gulp to v4.
+
+## 1.0.0
+- Initial version of Ratchet
 
 

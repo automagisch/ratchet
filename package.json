@@ -1,6 +1,6 @@
 {
   "name": "ratchet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple and clean boilerplate for quickly kickstarting new projects. Very minimal integration with much power.",
   "main": "index.js",
   "scripts": {
@@ -45,10 +45,10 @@
     "gulp-file-include": "^0.13.7",
     "gulp-handlebars": "^4.0.0",
     "gulp-imagemin": "^2.4.0",
+    "gulp-load-tasks": "^0.8.4",
     "gulp-nodemon": "^2.0.6",
     "gulp-ruby-sass": "^2.0.6",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-task-loader": "^1.4.0",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
     "gulp-wrap": "^0.13.0",

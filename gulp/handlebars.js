@@ -4,7 +4,7 @@ var wrap 		= require('gulp-wrap');
 var declare 	= require('gulp-declare');
 var concat 		= require('gulp-concat');
 
-module.exports = function() {
+module.exports = function(done) {
 
 	return gulp.src('./src/handlebars/*.hbs')
 		.pipe(handlebars({
@@ -17,5 +17,8 @@ module.exports = function() {
 		}))
 		.pipe(concat('templates.js'))
 		.pipe(gulp.dest('dist/assets/js'));
+
+	// opt out this gulp task
+	done();
 
 }

@@ -5,7 +5,7 @@ var babelify = require('babelify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 
-module.exports = function() {
+module.exports = function(done) {
 
 	browserify({
 			entries: ['./src/scripts/main.babel'],
@@ -22,5 +22,8 @@ module.exports = function() {
 		.pipe(source('main.js'))
 		.pipe(buffer())
 		.pipe(gulp.dest('./dist/assets/js'));
+
+	// opt out this gulp task
+	done();
 
 }

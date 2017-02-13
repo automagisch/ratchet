@@ -36,7 +36,7 @@ if(config.ratchet.show_ascii_art) {
  * START task
  * @description: boots up the server simultaneously with gulp
  */
-module.exports = function() {
+module.exports = function(done) {
 
 	// boot up nodeman, only watching the root folder with exceptions to keep restarting to a minimum
 	nodemon({
@@ -44,5 +44,8 @@ module.exports = function() {
 		ignore: ['dist/*','src/*','gulpfile.js'],
 		script: 'index.js'
 	});
+
+	// opt out this gulp task
+	done();
 
 }

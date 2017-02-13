@@ -16,7 +16,7 @@ var defaultFiles = [
 	'./dist/assets/js/main.js'
 ];
 
-module.exports = function() {
+module.exports = function(done) {
 
 	// loops over the default files and 
 	// uses FS to write these.
@@ -26,5 +26,8 @@ module.exports = function() {
 
 	return gulp.src('./dist')
 		.pipe(gutil.noop());
+
+	// opt out this gulp task
+	done();
 
 }
