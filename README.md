@@ -180,15 +180,15 @@ use_es6 = false
 ```
 
 ### Known bugs
-- The distribution folder is not synced, so if you delete files in src, you'll have to delete them yourself in `./dist`.
+None! If you manage to encounter one, please open an issue, so I can take a look at it.
 
 ### Planned fixes
+None at this moment.
 
 ### Planned features
 - Add unit test functionality to ES6 javascript compilation [feature]
 - Add support for easily setting up express directives (and thus Ratchet will be more like a web-app boilerplate) [feature]
 - Create a good start for going with big javascript frameworks [feature]
-- Sync the dist folder with the source folder [bugfix]
 
 ### Changelog
 
