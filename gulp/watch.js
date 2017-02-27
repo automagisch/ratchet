@@ -44,7 +44,7 @@ module.exports = function(done) {
 	// watches the images folder for changes, if a change is detected, it runs task 'images'
 	watch('src/images/**/*.{jpg|png|svg}', gulp.series(['images'])).on('unlink', function(file) {
 		syncDeletion(file, function(removedFile) {
-			console.log(chalk.red('Ratchet: deleted ' + removedFile + ' from distribution folder.'));
+			console.log(chalk.red('\nRatchet: deleted ' + removedFile + ' from distribution folder.\n'));
 		});
 	});
 
