@@ -183,7 +183,7 @@ use_es6 = false
 None! If you manage to encounter one, please open an issue, so I can take a look at it.
 
 ### Planned fixes
-None at this moment.
+- Communicate to the user with emoji in the terminal, that's awesome!
 
 ### Planned features
 - Add unit test functionality to ES6 javascript compilation [feature]
