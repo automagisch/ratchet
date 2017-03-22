@@ -27,6 +27,8 @@ Install these packages and libraries before starting Ratchet:
 - [Bower](https://bower.io/#install-bower)
 - [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
+*note: Gulp 4.0 is used in Ratchet, this requires a little alternative installation, find out more here: https://demisx.github.io/gulp4/2015/01/15/install-gulp4.html*
+
 **Not in short:**
 
 1. **Install node.js (latest version will do!)**
