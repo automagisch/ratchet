@@ -80,6 +80,7 @@ Ratchet's build system is powered by Gulp - A powerfull and relatively simple ta
 
 2. Install all NPM dependencies from package.json and install bower packages from bower.json (bower install will be auto-triggered after npm finishes)
 `$ npm install` (if you get errors, try installing with `$ sudo npm install`)
+*note: this installation procedure might take a while, grab some coffee!*
 
 3. Start the server and start gulp tasks
 `$ npm start`
