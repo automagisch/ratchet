@@ -208,17 +208,6 @@ A list of import paths can be given in the config.ini file under the sass direct
 /path/to/another/scss/component
 ```
 
-### Known bugs
-None! If you manage to encounter one, please open an issue, so I can take a look at it.
-
-### Planned fixes
-- Communicate to the user with emoji in the terminal, that's awesome!
-
-### Planned features
-- Add unit test functionality to ES6 javascript compilation [feature]
-- Add support for easily setting up express directives (and thus Ratchet will be more like a web-app boilerplate) [feature]
-- Create a good start for going with big javascript frameworks [feature]
-
 ### Changelog
 
 ## 1.0.3
