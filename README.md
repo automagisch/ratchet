@@ -27,6 +27,8 @@ Install these packages and libraries before starting Ratchet:
 - [Bower](https://bower.io/#install-bower)
 - [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
+*note: Gulp 4.0 is used in Ratchet, this requires a little alternative installation, find out more here: https://demisx.github.io/gulp4/2015/01/15/install-gulp4.html*
+
 **Not in short:**
 
 1. **Install node.js (latest version will do!)**
@@ -79,7 +81,8 @@ Ratchet's build system is powered by Gulp - A powerfull and relatively simple ta
 `$ git clone https://github.com/automagisch/ratchet.git && cd ratchet`
 
 2. Install all NPM dependencies from package.json and install bower packages from bower.json (bower install will be auto-triggered after npm finishes)
-`$ npm install`
+`$ npm install` (if you get errors, try installing with `$ sudo npm install`)
+*note: this installation procedure might take a while, grab some coffee!*
 
 3. Start the server and start gulp tasks
 `$ npm start`
