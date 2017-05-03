@@ -197,7 +197,6 @@ and runs a different concatenation gulp task for handling javascript files.
 use_es6 = false
 ```
 
-<<<<<<< HEAD
 _Sass import paths_
 
 A list of import paths can be given in the config.ini file under the sass directive. By default, bourbon and fontawesome are linked. To remove these modules, simply remove them here. When you install assets with bower for example, you can link to its scss files in this array. The styles task processes this automatically.
