@@ -12,6 +12,7 @@ Ratchet features a lot of cool nowadays hot stuff! Ratchet collects the followin
 + [Handlebars](http://handlebarsjs.com/)
 + [ES6 (transpiled using babelify)](https://github.com/babel/babelify)
 + [Sass](http://sass-lang.com/)
++ [Bourbon](http://bourbon.io/)
 + [FontAwesome](http://fontawesome.io/)
 + [Normalize.css](https://necolas.github.io/normalize.css/)
 
@@ -98,6 +99,7 @@ I've built in a few cool utility features that will help you front-ending along 
 to worry about it a lot.
 
 **Serving static JSON over ajax:**
+
 I've made an API mock route in express that passes static JSON to the client side. You can use these for simulating client-side AJAX calls! All you have to do is put a json file in the `data` directory. Then, you can request up that file (using GET, PUT, POST or DELETE methods) by passing in the filename (without JSON) after this url:
 
 `localhost:4200/api/your-file-name`
@@ -105,21 +107,25 @@ I've made an API mock route in express that passes static JSON to the client sid
 This will serve up the json file with that filename and it will be available as your JSON response body! Not a single line of back-end code needed ;).
 
 **Serving your HTML as if it were a route endpoint:**
+
 Ratchet serves up the `./dist` folder and therefore treats it as the root of the server. To make things more needo and feel a bit less 'html-y' and a bit more 'app-y', you can request your html files by leaving out the .html extension.
 
 In this case, Ratchet will ook for an html file corresponding to that filename and serve it up under that url! So if you have a file called 'documentation.html', you can serve it up by browsing to: `localhost:4200/documentation`. Crisp!
 
 **Include common HTML stuff as a template**
+
 Ratchet doesn't like huge-ass repetitive code. Especially not when it comes to HTML! That's why Ratchet uses the Gulp plugin [gulp-file-include](https://www.npmjs.com/package/gulp-file-include)! Inside the `./src` folder in the html directory, you'll find index.html including two files: `./includes/html_head.html` and `./includes/html_foot.html`. Within these two tags, you can code away freely as if you were inside the `<body>` (fun fact, you are, actually.)! The results will be outputted as concatenated
 HTML to `./dist`!
 
 **Manage your bower assets**
+
 Assets are assets, custom code is custom code! Bower understands this principle and therefore, Ratchet goes with this thought. Ratchet bundles assets as vendor distributions (noticed the vendor.css and vendor.js files in the distribution folder?). This all comes
 together in the assets.json file, which is powered by a gulp package: [gulp-bower-assets](https://www.npmjs.com/package/gulp-bower-assets).
 
 The only thing you need to do after installing a new Bower package (using `bower install`, refer to the bower docs for more info), you can insert the path to the installed source files in assets.json, which will be concatenated to single files to the distribution folder!
 
 **Precompilated handlebars templates**
+
 We love client-side javascript templating! It's the future, and Ratchet goes with Handlebars as an absolute utopia. Handlebars is a very minimal javascript templating language. It's used often as templates that need to be filled from AJAX response bodies.
 In Ratchet, you have not to worry about any setup for this, Ratchet takes care of it for you!
 
@@ -151,7 +157,12 @@ More info about handlebars can be found on their website, it's awesome!:
 This Gulp package taking care of the hbs precompilation in Ratchet:
 [gulp-handlebars](https://www.npmjs.com/package/gulp-handlebars)
 
+**Awesome Sass mixins from Bourbon**
+
+[Bourbon](http://bourbon.io/) is a lightweight scss mixin/function library. Go check their website out, as ratchet exposes these mixins by default to use!
+
 **Minification**
+
 Minifying your code is easy, just run `gulp build --production` and minification is done automagically. This goes for seperate gulp tasks as well, like `gulp styles --production` and `gulp babel --production`.
 
 ### Configurables
@@ -177,12 +188,23 @@ show_ascii_art = false
 ```
 
 _enable/disable es6 or good 'ol javascript_
+
 If you prefer to work with Javascript as we know it, you can configure so in config.ini. Ratchet automatically picks up on this
-and
+and runs a different concatenation gulp task for handling javascript files.
 
 ```ini
 [ratchet]
 use_es6 = false
+```
+
+_Sass import paths_
+
+A list of import paths can be given in the config.ini file under the sass directive. By default, bourbon and fontawesome are linked. To remove these modules, simply remove them here. When you install assets with bower for example, you can link to its scss files in this array. The styles task processes this automatically.
+
+```ini
+[sass]
+/path/to/scss/component
+/path/to/another/scss/component
 ```
 
 ### Known bugs
