@@ -229,10 +229,10 @@ None! If you manage to encounter one, please open an issue, so I can take a look
 - added minification features to compiled css and javascript
 - fixed a critical installation bug by adding an init task to gulp (runs install and build when bower is done installing). (gulp install would throw errors because it was trying to run a gulp task before gulp was installed via npm).
 
-### 1.0.1
+## 1.0.1
 - updated Gulp to v4.
 
-### 1.0.0
+## 1.0.0
 - Initial version of Ratchet
 
 ## Planned features
