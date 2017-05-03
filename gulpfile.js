@@ -17,6 +17,14 @@ gulp.task('build', gulp.series(['bower','images', javascript_task,'handlebars','
 }));
 
 /**
+ * INIT task
+ * @description: runs after npm and bower finished installing. Makes a first build and sets default files.
+ */
+gulp.task('init', gulp.series(['install','build']), function(done) {
+	done();
+});
+
+/**
  * DEFAULT task
  * @description: defines 'gulp' command tasks
  */

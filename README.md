@@ -197,6 +197,7 @@ and runs a different concatenation gulp task for handling javascript files.
 use_es6 = false
 ```
 
+<<<<<<< HEAD
 _Sass import paths_
 
 A list of import paths can be given in the config.ini file under the sass directive. By default, bourbon and fontawesome are linked. To remove these modules, simply remove them here. When you install assets with bower for example, you can link to its scss files in this array. The styles task processes this automatically.
@@ -226,9 +227,16 @@ None! If you manage to encounter one, please open an issue, so I can take a look
 
 ## 1.0.2
 - added minification features to compiled css and javascript
+- fixed a critical installation bug by adding an init task to gulp (runs install and build when bower is done installing). (gulp install would throw errors because it was trying to run a gulp task before gulp was installed via npm).
 
-## 1.0.1
+### 1.0.1
 - updated Gulp to v4.
 
-## 1.0.0
+### 1.0.0
 - Initial version of Ratchet
+
+## Planned features
+
+- Add unit test functionality to ES6 javascript compilation [feature]
+- Add support for easily setting up express directives (and thus Ratchet will be more like a web-app boilerplate) [feature]
+- Create a good start for going with big javascript frameworks [feature]
