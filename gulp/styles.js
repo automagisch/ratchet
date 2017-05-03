@@ -8,6 +8,7 @@ var converter 	= require('byte-converter').converterBase2;
 /**
  * STYLES task
  * @description: handles off sass to css compilation
+ * note: when used with --production, it minifies the code
  */
 module.exports = function(done) {
 

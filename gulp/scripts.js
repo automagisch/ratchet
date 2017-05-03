@@ -8,6 +8,7 @@ var concat 	= require('gulp-concat');
 /**
  * SCRIPTS task
  * @description: watches src folder for changes and perform tasks on them
+ * note: when used with --production flag, it minifies the code
  */
 module.exports = function(done) {
 

@@ -49,7 +49,7 @@ npm is the package manager that comes with node.js. Ratches uses it to download,
 [sass-lang.com/install](http://sass-lang.com/install)
 
 4. **Get Bower**
-Bower is a package manager (like npm) but more focussed on front-end (or client-side) libraries (like jQuery, bootstrap etc.). Bower is opinionated by the community, some say we should use it, others say we should go with NPM. But Ratchet goes with bower! 
+Bower is a package manager (like npm) but more focussed on front-end (or client-side) libraries (like jQuery, bootstrap etc.). Bower is opinionated by the community, some say we should use it, others say we should go with NPM. But Ratchet goes with bower!
 Front-end and back-end dependencies should be seperated at all times (in Ratchet's opinion, that is). In order to use bower, install it via NPM:
 [bower.io/#install-bower](https://bower.io/#install-bower)
 
@@ -57,7 +57,7 @@ Front-end and back-end dependencies should be seperated at all times (in Ratchet
    $ npm install -g bower
    ```
 
-   or (if you get permission errors) 
+   or (if you get permission errors)
 
    ```bash
    $ sudo npm install -g bower
@@ -94,11 +94,11 @@ Ratchet's build system is powered by Gulp - A powerfull and relatively simple ta
 Ratchet aims to be quick and simple without any necessary configuration. Basically everything you do will be in `./src/`. This goes for JS, scss, images, html, fonts and handlebars. These directories are clean, they don't follow any build-specific instructions for any kind of thing, they just output directly to `./dist`. You are in total control how your source folder works! And yes, you can use importing features from ES6 and Sass (the folder your main js/scss file lives in is treated as the root)!
 
 ### Handy-dandies
-I've built in a few cool utility features that will help you front-ending along without having 
+I've built in a few cool utility features that will help you front-ending along without having
 to worry about it a lot.
 
 **Serving static JSON over ajax:**
-I've made an API mock route in express that passes static JSON to the client side. You can use these for simulating client-side AJAX calls! All you have to do is put a json file in the `data` directory. Then, you can request up that file (using GET, PUT, POST or DELETE methods) by passing in the filename (without JSON) after this url: 
+I've made an API mock route in express that passes static JSON to the client side. You can use these for simulating client-side AJAX calls! All you have to do is put a json file in the `data` directory. Then, you can request up that file (using GET, PUT, POST or DELETE methods) by passing in the filename (without JSON) after this url:
 
 `localhost:4200/api/your-file-name`
 
@@ -137,8 +137,8 @@ Every `.hbs` template you'll create in `./src/handlebars` will get precompiled i
 ```javascript
 // main.babel
 
-// get our template function from the precompiled namespacce 
-var userCardTemplate = Handlebars.templates['user-card']; 
+// get our template function from the precompiled namespacce
+var userCardTemplate = Handlebars.templates['user-card'];
 // JSON content to pass to the template
 var content = {name:'John Doe', age: 28};
 // output html, inject this to the body and kaboom! Magic :)
@@ -150,6 +150,9 @@ More info about handlebars can be found on their website, it's awesome!:
 
 This Gulp package taking care of the hbs precompilation in Ratchet:
 [gulp-handlebars](https://www.npmjs.com/package/gulp-handlebars)
+
+**Minification**
+Minifying your code is easy, just run `gulp build --production` and minification is done automagically. This goes for seperate gulp tasks as well, like `gulp styles --production` and `gulp babel --production`.
 
 ### Configurables
 There are (and will be) more easy configurables in Ratchet. They all live in config.ini, and can be changed there.
@@ -175,7 +178,7 @@ show_ascii_art = false
 
 _enable/disable es6 or good 'ol javascript_
 If you prefer to work with Javascript as we know it, you can configure so in config.ini. Ratchet automatically picks up on this
-and 
+and
 
 ```ini
 [ratchet]
@@ -200,5 +203,3 @@ None! If you manage to encounter one, please open an issue, so I can take a look
 
 ## 1.0.0
 - Initial version of Ratchet
-
-

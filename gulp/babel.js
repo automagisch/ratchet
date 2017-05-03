@@ -9,6 +9,11 @@ var buffer 			= require('vinyl-buffer');
 var chalk 			= require('chalk');
 var uglify 			= require('gulp-uglify');
 
+/**
+ * BABEL task
+ * @description: builds the dist folder without starting the server and watch tasks
+ * note: when used with --production, it minifies the code
+ */
 module.exports = function(done) {
 
 	browserify({
