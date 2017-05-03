@@ -1,5 +1,6 @@
 var gulp 		= require('gulp');
 var fileInclude = require('gulp-file-include');
+var prettify = require('gulp-html-prettify');
 
 /**
  * HTML task
@@ -9,9 +10,12 @@ module.exports = function(done) {
 
 	// target files
 	return gulp.src('./src/html/*.html')
- 
+
 		// pipe fileInclude to compile html
 		.pipe(fileInclude())
+
+		// pipe prettify to make html output pretty
+		.pipe(prettify({indent_char: ' ', indent_size: 2}))
 
 		// output to dist folder for serving
 		.pipe(gulp.dest('./dist'));
