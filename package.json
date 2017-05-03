@@ -1,6 +1,6 @@
 {
   "name": "ratchet",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple and clean boilerplate for quickly kickstarting new projects. Very minimal integration with much power.",
   "main": "index.js",
   "scripts": {
