@@ -20,6 +20,6 @@ gulp.task('build', gulp.series(['bower','images', javascript_task,'handlebars','
  * DEFAULT task
  * @description: defines 'gulp' command tasks
  */
-gulp.task('default', gulp.series(['bower','images',javascript_task,'handlebars','styles','html','watch','start'], function(done) {
+gulp.task('default', gulp.series(['watch','start'], function(done) {
 	done();
 }));
