@@ -198,6 +198,9 @@ None! If you manage to encounter one, please open an issue, so I can take a look
 
 ### Changelog
 
+## 1.0.2
+- added minification features to compiled css and javascript
+
 ## 1.0.1
 - updated Gulp to v4.
 
