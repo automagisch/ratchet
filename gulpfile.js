@@ -1,7 +1,7 @@
 /**
  * GULP and PROCESS dependencies
  */
-var config 	    = require('ini').parse(require('fs').readFileSync('./config.ini', 'utf-8'));
+var config 	= require('ini').parse(require('fs').readFileSync('./config.ini', 'utf-8'));
 var gulp 		= require('gulp');
 require('gulp-load-tasks')('gulp');
 
