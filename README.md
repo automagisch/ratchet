@@ -220,6 +220,10 @@ None! If you manage to encounter one, please open an issue, so I can take a look
 
 ### Changelog
 
+## 1.0.3
+- added Bourbon sass library to default stack
+- moved file imports for scss from gulp task to config.ini
+
 ## 1.0.2
 - added minification features to compiled css and javascript
 
