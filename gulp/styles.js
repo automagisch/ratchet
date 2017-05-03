@@ -1,3 +1,4 @@
+var config 			= require('ini').parse(require('fs').readFileSync('./config.ini', 'utf-8'));
 var gulp 				= require('gulp');
 var gutil 			= require('gulp-util');
 var sass 				= require('gulp-ruby-sass');
@@ -12,12 +13,18 @@ var converter 	= require('byte-converter').converterBase2;
  */
 module.exports = function(done) {
 
+	// extract loadpaths from ini
+	var sassLoadPaths = [];
+	if(config && config.sass) {
+		for(var prop in config.sass) {
+			sassLoadPaths.push(prop);
+		}
+	}
+
 	// initiates main.scss compilation in src folder
 	return sass('./src/scss/main.scss', {
 		sourcemap: gutil.env.production ? false : true,
-		loadPath: [
-			'bower_components/font-awesome/scss'
-		]
+		loadPath: sassLoadPaths
 	})
 
 		// logs the error if anything breaks
