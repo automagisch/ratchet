@@ -1,6 +1,8 @@
-var path 	= require('path');
-var fs 		= require('fs');
-var gulp 	= require('gulp');
+var path 		= require('path');
+var fs 			= require('fs');
+var gulp 		= require('gulp');
+var gutil 	= require('gulp-util');
+var uglify 	= require('gulp-uglify');
 var concat 	= require('gulp-concat');
 
 /**
@@ -36,6 +38,9 @@ module.exports = function(done) {
 
 		// concatenate these files into one file
 		.pipe(concat('main.js'))
+
+		// uglify JS code in production mode
+		.pipe(gutil.env.production ? uglify() : gutil.noop())
 
 		// output the concat file to dist/assets/js
 		.pipe(gulp.dest('./dist/assets/js'));
