@@ -1,11 +1,13 @@
-var path = require('path');
-var fs = require('fs');
-var gulp = require('gulp');
-var browserify = require('browserify');
-var babelify = require('babelify');
-var source = require('vinyl-source-stream');
-var buffer = require('vinyl-buffer');
-var chalk = require('chalk');
+var path 				= require('path');
+var fs 					= require('fs');
+var gulp 				= require('gulp');
+var gutil 			= require('gulp-util');
+var browserify 	= require('browserify');
+var babelify 		= require('babelify');
+var source 			= require('vinyl-source-stream');
+var buffer 			= require('vinyl-buffer');
+var chalk 			= require('chalk');
+var uglify 			= require('gulp-uglify');
 
 module.exports = function(done) {
 
@@ -17,7 +19,8 @@ module.exports = function(done) {
 		.transform(babelify, {
 			extensions: ['.babel'],
 			presets: ["es2015"],
-			sourceRoot: './src/scripts/'
+			sourceRoot: './src/scripts/',
+			sourceMaps: gutil.env.production ? false : true
 		})
 		.bundle()
 		.on('error', function(err) {
@@ -28,6 +31,7 @@ module.exports = function(done) {
 		})
 		.pipe(source('main.js'))
 		.pipe(buffer())
+		.pipe(gutil.env.production ? uglify() : gutil.noop())
 		.pipe(gulp.dest('./dist/assets/js'));
 
 	// opt out this gulp task
