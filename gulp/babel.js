@@ -16,7 +16,7 @@ var uglify 			= require('gulp-uglify');
  */
 module.exports = function(done) {
 
-	browserify({
+	return browserify({
 			entries: ['./src/scripts/main.babel'],
 			extensions: ['.babel'],
 			debug: true
@@ -29,17 +29,23 @@ module.exports = function(done) {
 		})
 		.bundle()
 		.on('error', function(err) {
-			console.log(chalk.red('\nOopsie-daysee! You made an unforgivable typo:\n'));
-			console.log(`${err.codeFrame}\n`);
-			console.log(`>>> ${path.basename(err.fileName)} (line ${err.loc.line}, col ${err.loc.column} ]\n`);
+
+			if(err.loc) {
+				// assume typo error
+				console.log(chalk.red('\nOopsie-daysee! You made an unforgivable typo:\n'));
+				console.log(`${err.codeFrame}\n`);
+				console.log(`>>> ${path.basename(err.fileName)} (line ${err.loc.line}, col ${err.loc.column} ]\n`);
+			} else {
+				// assume other error
+				console.log(chalk.red(`${err}`));
+			}
+
 			this.emit('end');
+
 		})
 		.pipe(source('main.js'))
 		.pipe(buffer())
 		.pipe(gutil.env.production ? uglify() : gutil.noop())
 		.pipe(gulp.dest('./dist/assets/js'));
-
-	// opt out this gulp task
-	done();
 
 }
