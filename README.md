@@ -4,9 +4,9 @@ Create fast up-to-date ratchet apps using the latest in accepted web technologie
 
 ## Psst, before you read through:
 
-Maybe you should take a look at this: This is a newer brewed alternative by me as a starterkit, a minimal-dependency non-gulp babel-node (with es5 build capabilities for production apps): [Minimal Frontend Setup](https://github.com/automagisch/minimal-frontend-setup)
+Maybe you should take a look at this: This is a newer brewed alternative by me as a starterkit, a minimal-dependency non-gulp babel-node clean slate starter kit: [Minimal Frontend Setup](https://github.com/automagisch/minimal-frontend-setup)
 
-- comes out of the box with only babel and sass
+- comes out of the box with babel and sass for defining styles and client javascript
 - provides a perfect clean-slate without the first-time-setup hassle blahdieblah: `npm install` and go!
 
 ## Ratchet comes with:
