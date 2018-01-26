@@ -2,6 +2,13 @@
 
 Create fast up-to-date ratchet apps using the latest in accepted web technologies! Ratchet is a collection of new-skool development tools and libraries!
 
+## Psst
+
+This is a newer brewed alternative by me as a starterkit, a minimal-dependency non-gulp babel-node (with es5 build capabilities): [Minimal Frontend Setup](https://github.com/automagisch/minimal-frontend-setup)\
+
+- comes out of the box with only babel and sass
+- provides a perfect clean-slate without the first-time-setup hassle blahdieblah: `npm install` and go!
+
 ## Ratchet comes with:
 Ratchet features a lot of cool nowadays hot stuff! Ratchet collects the following open source frameworks and packages:
 
